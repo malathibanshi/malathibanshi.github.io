@@ -413,102 +413,119 @@ header {
 }
 
 .projects-grid {
-    max-width: 1100px;
-
+    max-width: 950px;
     margin: auto;
 
-    display: grid;
+    display: flex;
+    flex-direction: column;
 
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 25px;
+    gap: 30px;
 }
 
 .project-card {
+    background: #ffffff;
 
-    background: white;
+    padding: 40px 45px;
 
-    padding: 35px;
+    border-radius: 18px;
 
-    border-radius: 15px;
+    border: 1px solid #dcecf7;
 
-    border: 1px solid #e1edf7;
+    box-shadow: 0 8px 25px rgba(33, 150, 243, 0.07);
 
-    transition: 0.3s;
+    transition: all 0.3s ease;
 
-    box-shadow:
-        0 5px 20px rgba(33, 150, 243, 0.05);
+    position: relative;
 }
 
 .project-card:hover {
+    transform: translateY(-5px);
 
-    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(33, 150, 243, 0.14);
 
-    box-shadow:
-        0 15px 35px rgba(33, 150, 243, 0.12);
+    border-color: #87CEEB;
 }
 
 .project-number {
-
     color: #2196F3;
-
-    font-weight: 700;
-
-    margin-bottom: 15px;
-}
-
-.project-card h3 {
-
-    font-family: "Playfair Display", serif;
-
-    font-size: 25px;
-
-    margin-bottom: 15px;
-}
-
-.project-card p {
-
-    color: #5F6B7A;
 
     font-size: 14px;
 
-    margin-bottom: 20px;
+    font-weight: 700;
+
+    margin-bottom: 10px;
+}
+
+.project-card h3 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 30px;
+
+    color: #172033;
+
+    margin-bottom: 18px;
+}
+
+.project-card p {
+    color: #5F6B7A;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    margin-bottom: 18px;
 }
 
 .project-tech {
-
     display: flex;
 
     flex-wrap: wrap;
 
-    gap: 7px;
+    gap: 8px;
 
-    margin-bottom: 20px;
+    margin-top: 20px;
+
+    margin-bottom: 22px;
+}
+
+.project-tech span {
+    padding: 7px 13px;
+
+    background: #EAF6FF;
+
+    color: #1679c7;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: 600;
 }
 
 .project-link {
+    display: inline-block;
 
     color: #1687e8;
 
-    font-weight: 600;
+    font-weight: 700;
 
     font-size: 14px;
 
-    transition: 0.3s;
+    margin-top: 5px;
 }
 
 .project-link:hover {
-
     color: #075da7;
 
     text-decoration: underline;
 }
 
 .inactive-project {
-
-    color: #8b95a3 !important;
+    color: #7c8794 !important;
 
     font-style: italic;
+
+    margin-top: 10px;
 }
 
 
