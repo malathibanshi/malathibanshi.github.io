@@ -422,7 +422,26 @@ header {
     gap: 30px;
 }
 
+/* =========================
+   PROJECT SECTION
+========================= */
+
+.projects-grid {
+    max-width: 950px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 35px;
+}
+
+
+/* Project Card */
+
 .project-card {
+    width: 100%;
+
     background: #ffffff;
 
     padding: 40px 45px;
@@ -435,7 +454,7 @@ header {
 
     transition: all 0.3s ease;
 
-    position: relative;
+    text-align: left;
 }
 
 .project-card:hover {
@@ -446,6 +465,9 @@ header {
     border-color: #87CEEB;
 }
 
+
+/* Project Number */
+
 .project-number {
     color: #2196F3;
 
@@ -453,28 +475,75 @@ header {
 
     font-weight: 700;
 
-    margin-bottom: 10px;
+    letter-spacing: 1px;
+
+    margin-bottom: 8px;
 }
+
+
+/* Project Title */
 
 .project-card h3 {
     font-family: "Playfair Display", serif;
 
-    font-size: 30px;
+    font-size: 32px;
 
     color: #172033;
 
-    margin-bottom: 18px;
+    margin-bottom: 20px;
 }
 
-.project-card p {
-    color: #5F6B7A;
+
+/* Project Description */
+
+.project-description {
+    color: #000000 !important;
 
     font-size: 15px;
 
     line-height: 1.8;
 
     margin-bottom: 18px;
+
+    max-width: 850px;
 }
+
+
+/* Key Functionalities Heading */
+
+.project-card h4 {
+    font-size: 17px;
+
+    color: #172033;
+
+    margin-top: 25px;
+
+    margin-bottom: 12px;
+}
+
+
+/* Project Features */
+
+.project-features {
+    margin: 0 0 25px 0;
+
+    padding-left: 22px;
+
+    color: #000000;
+
+    line-height: 1.8;
+}
+
+.project-features li {
+    margin-bottom: 6px;
+
+    padding-left: 5px;
+
+    font-size: 14px;
+}
+
+
+/* Technology Badges */
 
 .project-tech {
     display: flex;
@@ -483,7 +552,7 @@ header {
 
     gap: 8px;
 
-    margin-top: 20px;
+    margin-top: 25px;
 
     margin-bottom: 22px;
 }
@@ -502,6 +571,9 @@ header {
     font-weight: 600;
 }
 
+
+/* Live Project */
+
 .project-link {
     display: inline-block;
 
@@ -512,6 +584,8 @@ header {
     font-size: 14px;
 
     margin-top: 5px;
+
+    transition: 0.3s;
 }
 
 .project-link:hover {
@@ -520,12 +594,18 @@ header {
     text-decoration: underline;
 }
 
-.inactive-project {
-    color: #7c8794 !important;
+
+/* Project Status */
+
+.inactive-project,
+.project-status {
+    color: #000000 !important;
+
+    font-size: 14px;
 
     font-style: italic;
 
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 
