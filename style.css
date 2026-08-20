@@ -924,3 +924,25 @@ footer {
         gap: 8px;
     }
 }
+    /* =========================
+   PROJECT TEXT - BLACK
+========================= */
+
+.project-card p {
+    color: #000000 !important;
+}
+
+.project-card .project-status {
+    color: #000000 !important;
+}
+
+.project-card .inactive-project {
+    color: #000000 !important;
+}
+.project-card p {
+    color: #000000 !important;
+    font-size: 15px;
+    line-height: 1.8;
+    max-width: 850px;
+    margin-bottom: 18px;
+}    
